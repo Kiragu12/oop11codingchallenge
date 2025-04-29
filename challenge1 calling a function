@@ -1,0 +1,10 @@
+public class Welcomer {
+    void displayMessage() {
+        System.out.println("Greetings from Java!");
+    }
+
+    public static void main(String[] args) {
+        Welcomer obj = new Welcomer();
+        obj.displayMessage();
+    }
+}
