@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class HelloRepeater {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String command = "";
+
+        System.out.println("Type 'go' to print hello. Type anything else to exit:");
+        command = input.next();
+
+        while ("go".equalsIgnoreCase(command)) {
+            System.out.println("Hello!");
+            command = input.next();
+        }
+
+        input.close();
+    }
+}
